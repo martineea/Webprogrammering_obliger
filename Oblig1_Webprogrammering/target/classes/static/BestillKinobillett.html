@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestill kinobilletter</title>
+    <script src="BestillKinobillett.js"></script>
+</head>
+<body>
+
+<tr>
+<h1>Bestilling av kinobilletter</h1>
+<td>Velg film:</td>
+
+<select id="velgFilm">
+    <option>Velg film her</option>
+    <option>1917</option>
+    <option>Star Wars: The Rise of Skywalker</option>
+    <option>Once Upon a Time in Hollywood</option>
+    <option>Joker</option>
+    <option>21 Bridges</option>
+    <option>Ford V Ferrari</option>
+</select>
+    <td><span id="ikkeValgtFilm" style="color:red"></span><br/></div></td>
+</tr>
+
+<table>
+    <tr>
+        <td>Antall</td>
+        <td><input type="text" id="antall" size=2 onchange="settAntall()"/></td>
+        <td><span id="ikkeTall" style="color:red"></span><br/></div></td>
+    </tr>
+    <br/>
+</table>
+<table>
+    <br/>
+        <tr>
+            <td>Fornavn </td>
+            <td><input type="text" id="fornavn" /></td>
+            <td><span id="fornavnTomt" style="color:red"></span><br/></div></td>
+        </tr>
+        <tr>
+            <td>Etternavn </td>
+            <td><input type="text" id="etternavn" /></td>
+            <td><span id="etternavnTomt" style="color:red"></span><br/></div></td>
+        </tr>
+        <tr>
+            <td>Telefonnr </td>
+            <td><input type="text" id="telefonnr" /></td>
+            <td><span id="telefonnrTomt" style="color:red"></span><br/></div></td>
+        </tr>
+        <tr>
+            <td>Epost </td>
+            <td><input type="text" id="epost" /></td>
+            <td><span id="epostTomt" style="color:red"></span><br/></div></td>
+        </tr>
+    <tr>
+        <td><button value="kjøpBillett" onclick="kjopBillett();" />Kjøp billett</td>
+        <td></td>
+    </tr>
+</table>
+
+
+
+<tr>
+
+    <h2>Alle billetter</h2>
+    <span id="billetter">
+        <span id="feilMelding" style="color:red"></span><br/>
+    </span>
+    <br/>
+    <td><button value="SlettAlleBilletter" onclick="slettAlleBilletter();" />Slett alle billetter</td>
+    <td></td>
+    </select>
+</tr>
+
+
+
+
+
+
+</body>
+</html>

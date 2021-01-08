@@ -1,0 +1,20 @@
+/*
+Bare for å style layouten litt, for jeg vil ikke bruke table på html, kun JS.
+ */
+
+tr, th, td, table {
+    border: solid white 10px;
+}
+
+#fornavn {
+    margin-left: 9px;
+}
+
+#epost {
+    margin-left: 26px;
+    margin-bottom: 10px;
+}
+
+#antall {
+    margin-top: 10px;
+}

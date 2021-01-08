@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestill kinobilletter</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="BestillKinobillett.js"></script>
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+<table class="table table-striped">
+<h1>Bestilling av kinobilletter</h1>
+    Velg film: <select id="film">
+    <option id= "feilFilm" value="feilFilm">Velg film her</option>
+    <option>1917</option>
+    <option>Star Wars: The Rise of Skywalker</option>
+    <option>Once Upon a Time in Hollywood</option>
+    <option>Joker</option>
+    <option>21 Bridges</option>
+    <option>Ford V Ferrari</option>
+</select>
+    <span id="ikkeValgtFilm" style="color:red"></span>
+    <br/>
+    <tr>
+        <td>Antall</td>
+        <td><input type="text" id="antall" size="2" />
+            <span id="ikkeTall" style="color:red"></span><br/></td>
+        <br/>
+    </tr>
+    <tr>
+        <td>Fornavn</td>
+        <td><input type="text" id="fornavn"/>
+            <span id="fornavnFeil" style="color:red"></span><br/></td>
+    </tr>
+    <tr>
+        <td>Etternavn</td>
+        <td><input type="text" id="etternavn"/>
+            <span id="etternavnFeil" style="color:red"></span><br/></td>
+    </tr>
+    <tr>
+        <td>Telefonnr</td>
+        <td><input type="text" id="telefonnr"/>
+            <span id="telefonnrFeil" style="color:red"></span><br/></td>
+    </tr>
+    <tr>
+        <td>Epost</td>
+        <td><input type="text" id="epost"/>
+            <span id="epostFeil" style="color:red"></span><br/></div></td>
+    </tr>
+</table>
+<button class="btn btn-warning" onclick="kjopBillett()">Kjøp billett</button>
+<br/>
+<br/>
+<h2>Alle billetter</h2>
+<div id="billetter"></div>
+<br/>
+<button class="btn btn-danger" onclick="slettAlleBilletter()">Slett alle billetter</button>
+
+</body>
+</html>

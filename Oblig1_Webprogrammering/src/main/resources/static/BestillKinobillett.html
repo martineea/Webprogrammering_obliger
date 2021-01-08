@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestill kinobilletter</title>
+    <script src="BestillKinobillett.js"></script>
+    <link rel="stylesheet" href="BestillKinobillett.css">
+</head>
+
+<body>
+
+<h1>Bestilling av kinobilletter</h1>
+<form id="reset">
+    Velg film: <select id="velgFilm">
+    <option value="feilFilm">Velg film her</option>
+    <option>1917</option>
+    <option>Star Wars: The Rise of Skywalker</option>
+    <option>Once Upon a Time in Hollywood</option>
+    <option>Joker</option>
+    <option>21 Bridges</option>
+    <option>Ford V Ferrari</option>
+</select>
+    <td><span id="ikkeValgtFilm" style="color:red"></span><br/></td>
+    <tr>
+        <td>Antall</td>
+        <td><input type="text" id="antall" size=2/>
+            <span id="ikkeTall" style="color:red"></span><br/></td>
+        <br/>
+    </tr>
+    <tr>
+        <td>Fornavn</td>
+        <td><input type="text" id="fornavn"/>
+            <span id="fornavnFeil" style="color:red"></span><br/></td>
+    </tr>
+    <tr>
+        <td>Etternavn</td>
+        <td><input type="text" id="etternavn"/>
+            <span id="etternavnFeil" style="color:red"></span><br/></td>
+    </tr>
+    <tr>
+        <td>Telefonnr</td>
+        <td><input type="text" id="telefonnr"/>
+            <span id="telefonnrFeil" style="color:red"></span><br/></td>
+    </tr>
+    <tr>
+        <td>Epost</td>
+        <td><input type="text" id="epost"/>
+            <span id="epostFeil" style="color:red"></span><br/></div></td>
+    </tr>
+</form>
+
+<button onclick="kjopBillett();">Kjøp billett</button>
+
+<h2>Alle billetter</h2>
+<div id="billetter"></div>
+<br/>
+<button value="SlettAlleBilletter" onclick="slettAlleBilletter();">Slett alle billetter</button>
+
+</body>
+</html>
